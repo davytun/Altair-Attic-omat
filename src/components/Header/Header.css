@@ -1,0 +1,60 @@
+.h-wrapper {
+  z-index: 9999;
+  top: 0;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.h-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 2rem;
+}
+
+.h-menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.h-menu > *:hover {
+  cursor: pointer;
+  color: #080101c8;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .h-container {
+    margin-top: 3px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .h-menu {
+    color: var(--black);
+    position: absolute;
+    gap: 2rem;
+    font-weight: 500;
+    flex-direction: column;
+    right: 1rem;
+    top: 4rem;
+    background: rgb(1, 166, 255);
+    border-radius: 10px;
+    transition: all 200ms ease;
+    align-items: flex-start;
+    padding: 1rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  .menu-icon {
+    cursor: pointer;
+  }
+}
