@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
-import data from "../../utils/wordSlid";
+import data from "../../utils/datas";
 import { sliderSettings } from "../../utils/common";
 import "./Work.css";
 
