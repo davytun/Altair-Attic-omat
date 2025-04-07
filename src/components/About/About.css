@@ -1,7 +1,6 @@
 .about-us-container {
-  /* background-color: #f0f8ff; */
+  background-color: #f0f8ff;
   padding: 2rem;
-  border-radius: 15px;
   width: auto;
   height: auto;
   margin: 2rem auto;
@@ -10,6 +9,7 @@
 .about-us-content {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
 }
 
@@ -37,7 +37,9 @@
 
 .about-us-image img {
   width: 100%;
-  /* border-radius: 10%; */
+  height: 350px;
+  display: block;
+  object-fit: cover;
 }
 
 .learn-more-button {
@@ -61,7 +63,7 @@
   }
 
   .about-us-text {
-    text-align: center;
+    text-align: left;
   }
 
   .about-us-text h2 {
@@ -69,18 +71,21 @@
     margin-bottom: 1rem;
   }
 
+  .about-us-heading {
+    align-self: center;
+  }
+
   .about-us-text p {
     color: #333;
     font-size: 0.8rem;
+    margin-top: 2rem;
     margin-bottom: 1rem;
     line-height: 1.6;
   }
 
   .about-us-image img {
-    width: 67%;
+    width: 100%;
+    height: auto;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 15%;
   }
 }

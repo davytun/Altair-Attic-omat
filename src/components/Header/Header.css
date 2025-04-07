@@ -1,18 +1,18 @@
 .h-wrapper {
   z-index: 9999;
   top: 0;
-  position: fixed;
+  position: sticky;
   left: 0;
   width: 100%;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  /*  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); */
 }
 
 .h-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-block: 2rem;
+  padding-block: 1.5rem;
 }
 
 .h-menu {

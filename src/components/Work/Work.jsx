@@ -8,12 +8,10 @@ import "./Work.css";
 
 const Work = () => {
   return (
-    <div className="w-wrapper">
+    <div className="w-wrapper" id="services">
       <div className="paddings innerWidth w-container">
         <div className="flexColStart w-head">
-          <span className="primaryText">
-            <u className="under">Our services</u>
-          </span>
+          <span className="primaryText ">OUR SERVICES</span>
           <div className="w-underline"></div>
         </div>
         <Swiper {...sliderSettings}>

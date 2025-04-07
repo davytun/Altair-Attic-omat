@@ -3,7 +3,6 @@ import "./Footer.css";
 import logo from "/fLogo.png";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
-
 const Footer = () => {
   return (
     <footer className="footer-wrapper">
@@ -46,11 +45,10 @@ const Footer = () => {
         {/* Right side */}
         <div className="footer-right">
           <h3 className="footer-title">Address</h3>
-          <p className="footer-text">
-            3rd floor, E n j Supermarket Building, <br />
-            Along Oba Ademola Maternity <br />
-            Hospital, Ake, Abeokuta.
-          </p>
+          <address className="footer-text">
+            3rd floor, Opposite Cathedral of St. Peter Ang. Sec. Sch, Along Oba
+            Ademola Maternity Hospital, Ake, Abeokuta.
+          </address>
         </div>
       </div>
     </footer>

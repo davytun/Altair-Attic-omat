@@ -3,7 +3,7 @@ import "./MissionVision.css";
 
 const MissionVision = () => {
   return (
-    <section className="mission-vision-sectio innerWidth">
+    <section className="mission-vision-section innerWidth">
       <div className="mission-vision-container">
         <div className="mission-vision-content">
           <h2>Our Mission</h2>

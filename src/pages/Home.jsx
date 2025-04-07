@@ -24,9 +24,8 @@ function Home() {
         url="https://www.altairattic.com/"
         image="https://www.altairattic.com/home.jpg"
       />
-
+      <Header />
       <Hero />
-
       <ExSer />
       <AboutUs />
       <MissionVision />

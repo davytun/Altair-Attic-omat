@@ -37,7 +37,7 @@ const wordSlid = [
       Question: "How do you ensure the quality of your software?",
       Answer:
         "We follow rigorous testing and quality assurance processes to deliver reliable and high-performing software solutions.",
-    },
+    }, 
     Q3: {
       Question:
         "Can you develop software for both small businesses and large enterprises?",

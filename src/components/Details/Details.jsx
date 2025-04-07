@@ -21,18 +21,18 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact-us" className="c-wrapper">
-      <div className="paddings innerWidth flexCenter c-container">
+    <div id="contact-us" className="c-wrapper ">
+      <div className="paddings innerWidth flexCenter c-container relative ">
         {/* left side */}
         <div className="flexColStart c-left">
-          <span className="orangeText">Our Contact Us</span>
-          <span className="primaryText">Easy to contact us</span>
+          <span className="primaryText">CONTACT US</span>
+          {/*           <span className="primaryText">Easy to contact us</span>
+           */}{" "}
           <span className="secondaryText">
             We provide the best services, believing advanced technology enhances
             life. At Altair Attic Limited, we bridge the gap between technology
             and everyday life.
           </span>
-
           <div className="flexColStart contactModes">
             {/* first row */}
             <div className="flexStart row">
@@ -106,8 +106,8 @@ const Contact = () => {
         </div>
 
         {/* right side */}
-        <div className="flexEnd c-right">
-          <div className="image-container">
+        <div className="c-right">
+          <div className="image-container ">
             <img src="./contact.jpeg" alt="Contact us" />
           </div>
         </div>

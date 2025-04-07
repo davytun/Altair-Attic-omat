@@ -34,7 +34,8 @@
 
 .w-card > :nth-child(3) {
   font-size: 0.7rem;
-  width: 15rem;
+  /*   width: 15rem;
+ */
 }
 
 .w-card:hover {

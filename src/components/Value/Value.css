@@ -38,6 +38,7 @@
   overflow: hidden;
   border-radius: 15rem 15rem 0 0;
   border: 8px solid rgba(232, 232, 232, 0.93);
+  margin-inline: auto;
 }
 
 .value-container img {
@@ -55,18 +56,18 @@
   fill: var(--blue);
 }
 
-.accordionButton .primaryText{
-    font-size: 1.1rem;
+.accordionButton .primaryText {
+  font-size: 1.1rem;
 }
 
 @media (max-width: 1024px) {
-    .v-container{
-        flex-direction: column;
-    }
+  .v-container {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 768px) {
-    .accordionButton .primaryText{
-        font-size: .8rem;
-    }
+  .accordionButton .primaryText {
+    font-size: 0.8rem;
+  }
 }

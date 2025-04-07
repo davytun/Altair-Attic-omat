@@ -4,6 +4,12 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
+    import React from "react";
+import "./Hero.css";
+import { motion } from "framer-motion";
+
+const Hero = () => {
+  return (
     <section className="relative  innerWidth paddings">
       <div className="flex flex-col items-center justify-center   z-10">
         <motion.div
@@ -38,6 +44,11 @@ const Hero = () => {
 };
 
 export default Hero;
+
+  );
+};
+
+export default Hero;
  */
 import React, { useState, useEffect } from "react";
 import "./Hero.css";
@@ -51,9 +62,8 @@ const Hero = () => {
   const [isPlaying, setIsPlaying] = useState(true);
 
   const slides = [
-    "url('/public/Hero.jpg')",
-    "url('/public/hero.svg')",
-    "url('/public/hero1.svg')",
+    "url('/public/home-auto2.jpg')",
+    "url('/public/software-dev.jpg')",
   ];
 
   // Automatically change slides every 5 seconds if playing
@@ -72,8 +82,8 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative w-full h-[90vh] md:h-[80vh] ">
-      <Header />
+    <section className="relative w-full h-[60vh] md:h-[80vh] flexCenter overflow-hidden">
+      {/*  <Header /> */}
       {/* Overlay */}
       <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
 
@@ -81,20 +91,26 @@ const Hero = () => {
       <AnimatePresence>
         <motion.div
           key={currentSlide}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          initial={{ opacity: 0, scale: 1 }}
+          animate={{ opacity: 1, scale: 1.1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 2 }}
-          className="absolute inset-0"
-          style={{
-            backgroundImage: slides[currentSlide],
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        ></motion.div>
+          transition={{ duration: 4, ease: "easeInOut" }}
+          className="absolute inset-0 "
+        >
+          <div
+            className="w-full h-full"
+            style={{
+              backgroundImage: slides[currentSlide],
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              width: "100%",
+              height: "100%",
+            }}
+          />
+        </motion.div>
       </AnimatePresence>
 
-      <div className="flex flex-col items-start justify-center h-full z-10 relative px-8 pt-25 pb-10  innerWidth">
+      <div className="flex flex-col items-start justify-center  z-10 relative px-8   innerWidth">
         {/* Left Section */}
         <motion.div
           initial={{ y: "2rem", opacity: 0 }}
