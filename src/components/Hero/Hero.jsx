@@ -61,10 +61,7 @@ const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
 
-  const slides = [
-    "url('/public/home-auto2.jpg')",
-    "url('/public/software-dev.jpg')",
-  ];
+  const slides = ["url('./home-auto2.jpg')", "url('./software-dev.jpg')"];
 
   // Automatically change slides every 5 seconds if playing
   useEffect(() => {

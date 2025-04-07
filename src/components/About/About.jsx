@@ -23,7 +23,7 @@ const About = () => {
           </div>
           <div className="about-us-image">
             <img
-              src="/public/Aboutus.jpg"
+              src="./Aboutus.jpg"
               alt="Altair Attic Limited Tech Visualization"
             />
           </div>
