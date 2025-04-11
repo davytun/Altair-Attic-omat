@@ -9,7 +9,7 @@ import "./Value.css";
 import data from "../../utils/accordion";
 
 const Value = () => {
-  const [expanded, setExpanded] = useState(false);
+  const [expanded, setExpanded] = useState(0);
 
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
@@ -60,7 +60,6 @@ const Value = () => {
         </div>
         <div className="values-right">
           <h2 className="v-primaryText">Our Values</h2>
-          <div className="orangeLine"></div>
           <p className="v-secondaryText">
             We believe in a set of core values that drive our mission and shape
             our company culture.

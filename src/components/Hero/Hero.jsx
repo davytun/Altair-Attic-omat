@@ -74,7 +74,14 @@ const Hero = () => {
             in automation, software, and IoT integration.
           </p>
           <div className="flex">
-            <button className="btn flex items-center gap-2 bg-blue-500 text-white py-3.5 px-7 rounded-md mt-4 hover:bg-blue-600">
+            <button
+              className="btn flex items-center gap-2 bg-blue-500 text-white py-3.5 px-7 rounded-md mt-4 hover:bg-blue-600"
+              onClick={() =>
+                document
+                  .getElementById("contact-us")
+                  .scrollIntoView({ behavior: "smooth" })
+              }
+            >
               Get Started
             </button>
           </div>

@@ -2,14 +2,12 @@ import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import SEO from "../../components/SEO";
 import data from "../../utils/slider.json";
-import useHeaderColor from "../../hooks/useHeaderColor";
 import "./ServiceDetail.css";
 
 const ServiceDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const service = data[id];
-  const headerColor = useHeaderColor();
 
   if (!service) {
     return <div>Service not found</div>;
@@ -20,7 +18,7 @@ const ServiceDetail = () => {
   };
 
   return (
-    <div >
+    <div>
       <SEO
         title={`Service Detail - ${service.name} - Altair Attic Limited`}
         description={`Details about service ${service.name} offered by Altair Attic Limited.`}
@@ -52,5 +50,3 @@ const ServiceDetail = () => {
 };
 
 export default ServiceDetail;
-
-

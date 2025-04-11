@@ -33,7 +33,8 @@ function Home() {
       {/* <Subsidiary/> */}
       <Value />
       <Details />
-      <GetStarted />
+      {/*       <GetStarted />
+       */}{" "}
       <Footer />
     </div>
   );
