@@ -1,6 +1,7 @@
 /* General Styles */
 .container {
   top: 100px;
+  margin-inline: auto;
 }
 .header {
   width: 100%;
@@ -10,13 +11,14 @@
 
 /* Breadcumb Area */
 .breadcumb-area {
-  background: url(https://solutek-html.netlify.app/assets/images/inner/breadcumb-bg.png);
+  background: url("/home-auto2.jpg");
   padding: 170px 0 170px;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   position: relative;
   margin: -77px 0 0 -16px;
-  top: 100px;
+  top: 50px;
 }
 
 .breadcumb-content {
@@ -24,8 +26,8 @@
 }
 
 .breadcumb-content h4 {
-  font-size: 55px;
-  line-height: 26px;
+  font-size: 50px;
+  line-height: 30px;
   color: #ffffff;
   font-weight: 600;
 }
@@ -44,7 +46,7 @@
   font-size: 16px;
   line-height: 26px;
   text-transform: uppercase;
-  color: #ff3b00;
+  color: #00a2ff;
   font-weight: 500;
 }
 
@@ -59,23 +61,24 @@
 
 .breadcumb-list li a:hover {
   text-decoration: none;
-  color: #ff3c00;
+  color: #00a2ff;
 }
 
 .serPage {
   display: flex;
   justify-content: space-between;
-  padding: 90px 0 121px;
+  /* padding: 90px 0 121px; */
+  margin-block: 120px;
 }
 
 .s-right,
 .s-left {
   flex: 1;
 }
-.s-right {
+/* .s-right {
   padding-right: 3rem;
   padding-left: 3rem;
-}
+} */
 
 .s-image img {
   width: 700px;
@@ -88,6 +91,7 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin-block: 1rem;
 }
 .s-primaryText {
   color: #1f3e72;
@@ -98,11 +102,10 @@
 .explain {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .explain-p {
-  margin-top: 24px;
   font-size: 15px;
   color: #7a7a7a;
 }
@@ -115,14 +118,12 @@
 }
 
 .choose {
-  padding-left: 1.4rem;
   width: 350px;
-  padding: 20px;
   border-radius: 15px;
   border: 2px solid #fff;
 }
 
-.Success li {
+.success li {
   list-style: none;
   font-size: 20px;
   line-height: 46px;
@@ -210,7 +211,7 @@
   color: #0097a7;
   font-size: 1.2rem;
   transition: color 0.4s ease;
-  text-align: center;
+  text-align: left;
 }
 
 .m-choose:hover {
@@ -238,9 +239,9 @@
 }
 
 .s-left {
-  gap: 4rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .s-con {
@@ -286,7 +287,7 @@
 @media (max-width: 1200px) {
   .serPage {
     flex-direction: column;
-    padding: 50px 0;
+    margin-block: 60px;
   }
   .s-right,
   .s-left {
@@ -305,7 +306,7 @@
     font-size: 14px;
   }
   .serPage {
-    padding: 30px 0;
+    margin-block: 30px;
   }
   .s-primaryText {
     font-size: 1.5rem;

@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
+// Nav links with page info
 const navLinks = [
-  { name: "Home", href: "/" },
-  { name: "Services", href: "#services" },
-  { name: "About", href: "/about" },
-  { name: "Values", href: "#value" },
-  { name: "Contact", href: "/contact" },
+  { name: "Home", href: "/", type: "route" },
+  { name: "Services", href: "#services", page: "/", type: "anchor" },
+  { name: "About", href: "/about", type: "route" },
+  { name: "Values", href: "#value", page: "/", type: "anchor" },
+  { name: "Contact", href: "/contact", type: "route" },
 ];
 
 const Header = () => {
@@ -22,13 +23,29 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="text-white text-2xl font-bold tracking-tight">
-            <img src="/logo.png" className="w-30" alt="" />{" "}
+            <img src="/logo.png" className="w-30" alt="Logo" />
           </Link>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center space-x-6">
-            {navLinks.map((link) =>
-              link.href.startsWith("#") ? (
+            {navLinks.map((link) => {
+              if (link.type === "route") {
+                return (
+                  <Link
+                    key={link.name}
+                    to={link.href}
+                    className={`transition hover:text-blue-500 ${
+                      isActive(link.href) ? "text-blue-500" : "text-white"
+                    }`}
+                  >
+                    {link.name}
+                  </Link>
+                );
+              }
+
+              const isOnCorrectPage = location.pathname === link.page;
+
+              return isOnCorrectPage ? (
                 <a
                   key={link.name}
                   href={link.href}
@@ -39,15 +56,13 @@ const Header = () => {
               ) : (
                 <Link
                   key={link.name}
-                  to={link.href}
-                  className={`transition hover:text-blue-500 ${
-                    isActive(link.href) ? "text-blue-500" : "text-[white]"
-                  }`}
+                  to={`${link.page} ${link.href}`}
+                  className="text-white hover:text-blue-500 transition"
                 >
                   {link.name}
                 </Link>
-              )
-            )}
+              );
+            })}
           </nav>
 
           {/* Mobile Menu Button */}
@@ -96,10 +111,29 @@ const Header = () => {
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: -20, opacity: 0 }}
             transition={{ duration: 0.25 }}
-            className="md:hidden absolute top-16 inset-x-0 bg-gray-500 backdrop-blur-md  shadow-xl p-4 space-y-3 z-40"
+            className="md:hidden absolute top-16 inset-x-0 bg-gray-500 backdrop-blur-md shadow-xl p-4 space-y-3 z-40"
           >
-            {navLinks.map((link) =>
-              link.href.startsWith("#") ? (
+            {navLinks.map((link) => {
+              if (link.type === "route") {
+                return (
+                  <Link
+                    key={link.name}
+                    to={link.href}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className={`block text-lg font-medium px-4 py-2 rounded-lg transition ${
+                      isActive(link.href)
+                        ? "text-blue-500 bg-gray-500"
+                        : "text-white hover:bg-gray-500"
+                    }`}
+                  >
+                    {link.name}
+                  </Link>
+                );
+              }
+
+              const isOnCorrectPage = location.pathname === link.page;
+
+              return isOnCorrectPage ? (
                 <a
                   key={link.name}
                   href={link.href}
@@ -111,18 +145,14 @@ const Header = () => {
               ) : (
                 <Link
                   key={link.name}
-                  to={link.href}
+                  to={`${link.page}${link.href}`}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className={`block text-lg font-medium px-4 py-2 rounded-lg transition ${
-                    isActive(link.href)
-                      ? "text-blue-500 bg-gray-500"
-                      : "text-white hover:bg-gray-500"
-                  }`}
+                  className="block text-lg text-white font-medium px-4 py-2 rounded-lg hover:bg-gray-500 transition"
                 >
                   {link.name}
                 </Link>
-              )
-            )}
+              );
+            })}
           </motion.div>
         )}
       </AnimatePresence>

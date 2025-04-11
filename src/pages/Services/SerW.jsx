@@ -110,7 +110,9 @@ const SerW = () => {
                     alt="icon"
                   />
                 </div>
-                <h3 className="e-primaryChoose s-primaryChoose">Empowering Your Success</h3>
+                <h3 className="e-primaryChoose s-primaryChoose">
+                  Empowering Your Success
+                </h3>
                 <p className="explain-p">{success}</p>
               </div>
             </div>
