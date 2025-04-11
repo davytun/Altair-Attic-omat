@@ -35,7 +35,7 @@ const Services = () => {
   );
 };
 
-const SlideNextButton = () => {
+/* onst SlideNextButton = () => {
   const swiper = useSwiper();
   return (
     <div className="flexCenter s-buttons">
@@ -47,6 +47,6 @@ const SlideNextButton = () => {
       </button>
     </div>
   );
-};
+}; */
 
 export default Services;
