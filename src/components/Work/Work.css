@@ -101,3 +101,16 @@
     align-items: center;
   }
 }
+
+
+.e-card:hover {
+  /* transform: scale(1.025); */
+  border-radius: 0 0 8px 8px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(0, 119, 255, 0) 0%,
+    rgba(136, 160, 255, 0.46) 217.91%
+  );
+  /* box-shadow: 0px 72px 49px -51px rgba(17, 54, 202, 0.21); */
+}

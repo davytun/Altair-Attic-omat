@@ -1,9 +1,50 @@
 import img1 from "/ser1.svg";
 import img2 from "/ser2.svg";
 import img3 from "/ser3.svg";
-
+import img4 from "/ser4.svg";
 
 const wordSlid = [
+  {
+    name: "Smart Home Automation",
+    url: "/smart-home-automation",
+    detail: "Transform Your Living Space",
+    define:
+      "We specialize in creating intelligent living environments that provide comfort, security, and energy efficiency.",
+    image: img1,
+    video: "/Home Automation.mp4",
+    additionalInfo: [
+      "Home Security Systems: Automated locks, cameras, and alarm systems.",
+      "Lighting Control: Smart lighting systems that adapt to your schedule.",
+      "Climate Control: Automated thermostats and HVAC systems for optimal comfort.",
+      "Entertainment Systems: Integrated audio and video solutions.",
+      "Voice Assistants: Seamless integration with Alexa, Google Assistant, and more.",
+    ],
+    explain: [
+      {
+        e_p1: "At Altair Attic Limited, our smart home automation solutions transform your living space into an intelligent, connected environment. We integrate advanced technologies to control lighting, climate, entertainment systems, and security, all accessible through your smartphone or voice commands. Our systems provide unparalleled convenience, allowing you to manage your home effortlessly and efficiently, whether you’re at home or away.",
+        e_p2: "Beyond convenience, our smart home automation enhances security with features like smart locks and real-time surveillance. Our systems learn your preferences and routines, optimizing energy usage and reducing utility bills. As technology evolves, we ensure our solutions remain accessible and affordable, making modern living a reality for homeowners seeking to upgrade their spaces.",
+      },
+    ],
+    choose:
+      "Experience intelligent living with our advanced, secure, and energy-efficient smart home solutions tailored to your lifestyle.",
+    success:
+      "Empowering your success with intelligent, secure, and energy-efficient smart home solutions, tailored to enhance your lifestyle and convenience",
+    Q1: {
+      Question: "What is smart home automation?",
+      Answer:
+        "Smart home automation involves using technology to control and automate household systems like lighting, security, and climate control for enhanced convenience and efficiency.",
+    },
+    Q2: {
+      Question: "How can smart home automation benefit me?",
+      Answer:
+        "It offers increased convenience, improved security, energy savings, and the ability to control your home remotely.",
+    },
+    Q3: {
+      Question: "Is smart home automation difficult to install?",
+      Answer:
+        "Our solutions are designed for easy installation, and our team provides full support to ensure a seamless setup.",
+    },
+  },
   {
     name: "Software Development",
     url: "/software-development",
@@ -37,7 +78,7 @@ const wordSlid = [
       Question: "How do you ensure the quality of your software?",
       Answer:
         "We follow rigorous testing and quality assurance processes to deliver reliable and high-performing software solutions.",
-    }, 
+    },
     Q3: {
       Question:
         "Can you develop software for both small businesses and large enterprises?",

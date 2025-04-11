@@ -73,9 +73,7 @@
     justify-content: center;
   }
   .c-right img {
-    width: 300px;
-
-    justify-content: center;
+    display: none;
   }
 }
 @media (max-width: 1024px) {

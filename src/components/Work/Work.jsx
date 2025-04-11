@@ -5,6 +5,7 @@ import "swiper/css";
 import data from "../../utils/datas";
 import { sliderSettings } from "../../utils/common";
 import "./Work.css";
+import { ExpandableCardDemo } from "../ExpandableCardDemo";
 
 const Work = () => {
   return (
@@ -14,7 +15,7 @@ const Work = () => {
           <span className="primaryText ">OUR SERVICES</span>
           <div className="w-underline"></div>
         </div>
-        <Swiper {...sliderSettings}>
+        {/* <Swiper {...sliderSettings}>
           <SlideNextButton />
           {data.map((card, index) => (
             <SwiperSlide key={index}>
@@ -25,7 +26,8 @@ const Work = () => {
               </Link>
             </SwiperSlide>
           ))}
-        </Swiper>
+        </Swiper> */}
+        <ExpandableCardDemo />
       </div>
     </div>
   );

@@ -1,61 +1,8 @@
-/* import React from "react";
-import "./Hero.css";
-import { motion } from "framer-motion";
-
-const Hero = () => {
-  return (
-    import React from "react";
-import "./Hero.css";
-import { motion } from "framer-motion";
-
-const Hero = () => {
-  return (
-    <section className="relative  innerWidth paddings">
-      <div className="flex flex-col items-center justify-center   z-10">
-        <motion.div
-          initial={{ y: "2rem", opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{
-            duration: 2,
-            type: "ease-in",
-          }}
-          className="hero-left flex flex-col justify-center items-center md:items-start py-14 md:py-0"
-        >
-          <div className="text-center md:text-left space-y-6">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-snug">
-              Innovative <br />
-              Tech for <br />
-              <span className="text-blue-500">Everyday</span> Life
-            </h1>
-            <p className="text-gray-600 xl:max-w-lg">
-              Empowering homes, businesses, and individuals with smart solutions
-              in automation, software, and IoT integration.
-            </p>
-            <div className="flex justify-center md:justify-start">
-              <button className="btn flex items-center gap-2 bg-blue-500 text-white py-2 px-6 rounded-md mt-4 hover:bg-blue-600">
-                Get Started
-              </button>
-            </div>
-          </div>
-        </motion.div>
-      </div>
-    </section>
-  );
-};
-
-export default Hero;
-
-  );
-};
-
-export default Hero;
- */
 import React, { useState, useEffect } from "react";
 import "./Hero.css";
 import { motion, AnimatePresence } from "framer-motion";
 
 import { BiPause, BiPlay } from "react-icons/bi";
-import Header from "../Header/Header";
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -99,7 +46,7 @@ const Hero = () => {
             style={{
               backgroundImage: slides[currentSlide],
               backgroundSize: "cover",
-              backgroundPosition: "center",
+              backgroundPosition: "right",
               width: "100%",
               height: "100%",
             }}
