@@ -1,7 +1,6 @@
 import img1 from "/ser1.svg";
 import img2 from "/ser2.svg";
 import img3 from "/ser3.svg";
-import img4 from "/ser4.svg";
 
 const wordSlid = [
   {
